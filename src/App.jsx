@@ -87,11 +87,11 @@ const ImageCard = ({ image }) => {
 
   return (
     <div className="group break-inside-avoid mb-6">
-      <div className="relative overflow-hidden rounded-xl shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 transform hover:-translate-y-2 hover:scale-105">
+      <div className="relative overflow-hidden rounded-xl shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 transform hover:-translate-y-2">
         <img
           src={image.src}
           alt={`Design ${image.id}`}
-          className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-500 select-none"
+          className="w-full h-auto object-cover transition-transform duration-500 select-none"
           onContextMenu={handleContextMenu}
           draggable={false}
           loading="lazy"
